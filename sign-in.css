@@ -1,0 +1,184 @@
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/bg.jpg) no-repeat center/cover;
+  height: fit-content;
+}
+
+@media only screen and (max-width: 740px) {
+  body {
+    background: black;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px 0 40px;
+  margin-top: -20px;
+}
+
+header img {
+  width: 180px;
+}
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 460px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #737373;
+  align-items: center;
+  border-radius: 3px;
+  padding: 60px 0 150px 0;
+}
+
+@media only screen and (max-width: 740px) {
+  .sign-in {
+    width: 100%;
+    background-color: 100vw;
+    border-bottom: solid 1px white;
+  }
+}
+
+.sign-in .content {
+  width: 70%;
+}
+
+@media only screen and (max-width: 740px) {
+  .sign-in .content {
+    width: 92%;
+  }
+}
+
+.sign-in h1 {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.sign-in .info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.sign-in .info input {
+  width: 100%;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  padding: 16px 20px 10px 20px;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+}
+
+.sign-in .info input[type="text"] {
+  margin-bottom: 10px;
+}
+
+.sign-in .info input[type="password"] {
+  margin-bottom: 30px;
+}
+
+.sign-in .info button {
+  padding: 16px 20px 16px 20px;
+  border-radius: 3px;
+  border: none;
+  background-color: #e50914;
+  color: white;
+  font-size: 1.05rem;
+}
+
+.sign-in .help {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.sign-in .misc {
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+
+.sign-in .misc i {
+  margin-bottom: 20px;
+  color: rgb(0, 0, 155);
+}
+
+.sign-in .misc i span {
+  margin-left: 2px;
+  color: #737373;
+}
+
+.sign-in .misc h2 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.sign-in .misc h2 a {
+  color: white;
+  text-decoration: none;
+}
+
+.sign-in .misc h2 a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #737373;
+  margin-top: 50px;
+
+  padding: 40px 50px 70px 40px;
+}
+
+footer .content {
+  margin-left: 20px;
+}
+
+@media only screen and (min-width: 750px) {
+  footer .content {
+    margin-left: 100px;
+  }
+}
+
+footer ul {
+  margin-right: 30%;
+}
+
+footer .lists {
+  display: flex;
+  width: 80%;
+
+  margin-top: 25px;
+}
+
+footer .lists li {
+  list-style-type: none;
+  width: 200%;
+  margin-bottom: 20px;
+}
+
+footer .lists a {
+  color: #737373;
+  text-decoration: none;
+  font-size: 0.88rem;
+}
+
+footer .lists a:hover {
+  text-decoration: underline;
+}
